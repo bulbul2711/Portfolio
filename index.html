@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/b6e2d5b02f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/bluelogo.png" class="logo" alt="my logo" width="210" height="50" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Learning">Learning</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="row"> 
+          <div class="header-text">
+            <h1>
+              Hi, I'm <span class="name">Bulbul</span>
+              Jain
+            </h1>
+            <h2>I'm <span class="multiText"></span></h2>
+          </div>
+
+          <div class="contact-side">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fas fa-paper-plane"></i> bulbuljain2711@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i>8318296385</p>
+            <div class="social-icons">
+              <a href="https://github.com/bulbul2711" target="_blank"
+                ><i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/bulbul-jain-690911224/"
+                target="_blank"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100027564682742"
+                target="_blank"
+                ><i class="fab fa-facebook" aria-hidden="true"></i
+              ></a>
+              <!-- <a href="https://www.instagram.com/shrey_9879/" target="_blank"
+                ><i class="fab fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/shrey9879" target="_blank"
+                ><i class="fab fa-twitter" aria-hidden="true"></i
+              ></a> -->
+            </div>
+            <a
+              href="Bulbul_Jain_Resume.pdf"
+              download
+              target="_blank"
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ----------About---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-left">
+            <img src="images/mypic.jpg" alt="" />
+          </div>
+          <div class="about-right">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a Final year <span class="highlight">Computer Science Engineering </span>student pursuing graduation from LNCTS Bhopal. I’m passionate about <span class="highlight">software development</span> and looking forward to work on new projects in the near future. I'm a dedicated individual with excellent analytical and problem-solving skills. 
+                <br />
+                Technology excites me and I am always in awe of the change it drives in the world. My love for coding began with "Hello, World," and it has evolved into a deep-seated passion for creating software that can make a real impact.
+                <br /><br />
+                Specialties: <span class="highlight">Java, MySQL, Data Structures and Algorithms, Object Oriented Programming, DBMS, HTML, CSS, JavaScript, Bootstrap</span>
+                <br /><br />
+                Exploring & Learning: <span class="highlight">Spring Boot, C, C++, Python</span>
+                <br /><br />
+            Coding Platforms: <span class="highlight">LeetCode ( 350+ problems solved on LeetCode with consistency of 200+ days ), GeeksforGeeks</span>
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Subjects')">
+                Core Subjects
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Specialities</span><br />JAVA, Data Structures, Algorithms, OOPS, MySQL, HTML, CSS, JavaScript, Bootstrap</li>
+                <li>
+                  <span>Exploring & Learning</span><br />
+                  Spring Boot, C, C++, Python
+                </li>
+                <li>
+                  <span>Coding Platforms</span><br />LeetCode <span style="color: #ffcc00;">(350+ problems solved)</span>, GeeksforGeeks
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Subjects">
+              <ul>
+                <li>
+                  <span>Data Structure & Algorithms</span><br />
+                </li>
+                <li>
+                  <span>Computer Networks</span><br />
+                </li>
+                <li>
+                  <span>Database Management System</span><br />
+                </li>
+                <li>
+                  <span>Operating System</span><br />
+                </li>
+                <li>
+                  <span>Artificial Intelligence</span><br />
+                </li>
+                <li>
+                  <span>Machine Learning</span><br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2020-2024</span><br />Pursuing B.Tech from LNCTS Bhopal
+                  in CSE branch<br /> with an aggregate CGPA of <span style="color: #ffcc00;">9.20</span>
+                </li>
+                <li>
+                  <span>2019-2020</span><br />Passed 12<sup>th</sup> with <span style="color: #ffcc00;">92.4%</span> from
+                  ISC board
+                </li>
+                <li>
+                  <span>2017-2018</span><br />Passed 10<sup>th</sup> with <span style="color: #ffcc00;">92.67%</span> from
+                  ICSE board
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------Learning ------------------ -->
+    <div id="Learning">
+      <div class="container">
+        <h1 class="sub-title">My Learning</h1>
+        <div class="Learning-list">
+          <div>
+            <i class="fab fa-java"></i>
+            <h2>Java Programming</h2>
+            <p>
+              I have been learning Java programming since class 9<sup>th</sup>
+              as it was part of the ICSE board curriculum, then in my 1<sup
+                >st</sup
+              >
+              year of engineering ,I practice Java programming in HackerRank
+              where I achieve the 5 star points and then java basic certificate.
+              Then I start learning Java Collection Framework which help me getting a good knownledge
+              of the data structures and then Java libraries which helped me
+              futhur in my coding Journey.
+            </p>
+          </div>
+          <div>
+            <i class="fa fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I have started learning web development in my 2<sup>nd</sup> year
+              of Engineering from Youtube platform and from a book which I
+              randomly downloaded from Google. Firstly I began with HTML,CSS
+              where I understood about a website body ,its attritubes,tags and
+              the styling property. In my learning phase I also tried to build
+              some small webpages.After completing Basic webdev ,I explore
+              bootstrap framework and build a project on it. Then I move to
+              javascript where I understood the working features of a
+              website,DOM property.
+            </p>
+          </div>
+
+          <div>
+            <i class="fa fa-sharp fa-solid fa-lightbulb"></i>
+            <h2>Problem Solving</h2>
+            <p>
+              Started Problem Solving in my 2<sup>nd</sup> year of engineering
+              from HackerRank where i achieve 5 star points then in ordert to
+              learn a DSA for placement and improving my Problem Solving
+              Skiils,I purchase a course From GeeksforGeeks where I understood
+              the concepts,tricks,logic of solving the problem ,and the Data
+              Structures,Algorithms by which i learn about optimization of code
+              in both time complexity and space complexity. then i passed
+              HackerRank Problem Solving certificate which boast my confidance
+              in improving my problems solving skills, as till date i managed to
+              solve more than 400 questions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------Portfolio------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h2>File Hider</h2>
+              <p>
+                <br />A Command line Java application which help users to hide their important, confidential files form their system by authentication
+                method.<br /><br />Technology Used:-<br />
+                JAVA, MySQL, JDBC, JavaMail API
+              </p>
+              <a
+                href="https://github.com/bulbul2711/File__Hider"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h2>News Web App</h2>
+              <p>
+                <br />A web based application that allows to fetch current news of all the
+                categories using NewsApi.<br /><br />Technology Used:-<br />
+                HTML,CSS,JavaScript,NewsApi.
+              </p>
+              <a
+                href="https://github.com/bulbul2711/World_updates"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h2>Food Waste Management Website</h2>
+              <p>
+                <br />A web platform focused on minimizing food waste, allowing users to contribute their surplus food on a
+                regular basis.<br /><br />Technology Used:-<br />
+                HTML,CSS,Bootstrap,JavaScript.
+              </p>
+              <a
+                href="https://bulbul2711.github.io/The-Hunger-s-Kitchen/"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          
+        </div>
+        <a
+          class="btn"
+          href="https://github.com/bulbul2711"
+          target="_blank"
+        >
+          See More</a
+        >
+      </div>
+    </div>
+    <!-- ------------Contact----------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fas fa-paper-plane"></i> bulbuljain2711@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i>8318296385</p>
+            <div class="social-icons">
+              <a href="https://github.com/bulbul2711" target="_blank"
+                ><i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/bulbul-jain-690911224/"
+                target="_blank"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100027564682742"
+                target="_blank"
+                ><i class="fab fa-facebook" aria-hidden="true"></i
+              ></a>              
+            </div>
+            <a
+              href="Bulbul_Jain_Resume.pdf"
+              download
+              target="_blank"
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="7"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyC9TqkolFy092tsuaYcE_OvHhOI-FkDnjLOk3Wsw7G5dmkHWEZ3TTodJ32b4i7KsHu/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Form Submitted Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typingeffect = new Typed(".multiText", {
+        strings: ["Java Programmer", "Full Stack Developer", "Problem Solver"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500,
+      });
+    </script>
+  </body>
+</html>
